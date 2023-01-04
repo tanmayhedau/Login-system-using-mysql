@@ -1,11 +1,58 @@
+<head>
+  <style>
+    form {
+      width: 500px;
+      margin: 0 auto;
+      text-align: left;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px 20px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      background-color: #4caf50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
 <h1>Student register</h1>
-<form action="" method="POST">
-    <input type="text" name="First_Name" placeholder="Enter fname"><br/><br/>
-    <input type="text" name="Last_Name" placeholder="Enter lname"><br/><br/>
-    <input type="email" name="Email" placeholder="Enter Email"><br/><br/>
-    <input type="password" name="Password" placeholder="Enter password"><br/><br/>
-    
-    <input type="Submit" value="Submit">
-    <!-- <button type="button" value="Login">Login</button> -->
-    <a href="/login">Login</a>
+
+<form action="" method="post">
+  <label for="First_Name">First Name:</label><br />
+  <input type="text" id="First_Name" name="First_Name" /><br />
+  <label for="Last_Name">Last Name:</label><br />
+  <input type="text" id="Last_Name" name="Last_Name" /><br />
+  <label for="Email">Email:</label><br />
+  <input type="Email" id="Email" name="Email" /><br />
+  <label for="Password">Password:</label><br />
+  <input type="Password" id="Password" name="Password" /><br /><br />
+  <input type="submit" value="Submit" />
+  <a href="/login">Login</a>
 </form>
